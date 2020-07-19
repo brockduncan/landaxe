@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <section className="container hero">
           <h1 className="title logo">
-            <img src="/logo.svg" alt="Landaxe" width="300" />
+            <img src="/logo.svg" alt="Landaxe" width="260" />
           </h1>
           <div className="row">
             <div className="col-xs-12 col-md-6">
@@ -52,6 +52,29 @@ export default function Home() {
         }
         .logo {
           margin: 4rem 0;
+          padding: 0.75rem;
+          position: relative;
+        }
+        .logo:after {
+          content: "";
+          display: block;
+          width: 300px;
+          height: 100%;
+          border-radius: 25%;
+          background: radial-gradient(
+            rgba(255, 255, 255, 0.7),
+            transparent 70%
+          );
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .logo img {
+          position: relative;
+          z-index: 2;
+          max-width: 100%;
         }
         .card {
           background: rgba(255, 255, 255, 0.85);

@@ -3,16 +3,18 @@ import { Formik, Form, Field } from "formik";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Hero from "../components/hero";
 
 export default function RequestOffer() {
   return (
     <div className="wrapper">
       <Header />
+      <Hero title="Request an Offer" />
       <main>
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-md-7">
-              <h1>Request a Land Purchase Offer</h1>
+              <h2>Land Purchase Offer</h2>
               <p>
                 Commodo deserunt occaecat adipisicing irure esse mollit ut
                 deserunt amet exercitation sunt mollit culpa. Ea dolore id eu
@@ -126,7 +128,7 @@ export default function RequestOffer() {
                     />
                   </div>
                   <div className="form-group">
-                    <div class="form-row">
+                    <div className="form-row">
                       <div className="col col-md-8">
                         <label htmlFor="propertyState" className="sr-only">
                           State
@@ -139,7 +141,7 @@ export default function RequestOffer() {
                           <option>Ohio</option>
                         </Field>
                       </div>
-                      <div class="col col-md-4">
+                      <div className="col col-md-4">
                         <label htmlFor="propertyZipCode" className="sr-only">
                           Property Zip Code
                         </label>
@@ -202,11 +204,12 @@ export default function RequestOffer() {
           flex-flow: column nowrap;
           width: 100vw;
           height: 100vh;
+          padding-top: 48px;
         }
         main {
           height: 100%;
           display: flex;
-          align-items: center;
+          // align-items: center;
         }
       `}</style>
     </div>
