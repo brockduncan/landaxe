@@ -7,8 +7,8 @@ export default function Header() {
         <title>Landaxe</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="/">
+      <nav className="navbar navbar-light bg-light">
+        <a className="navbar-brand" href="/">
           <img src="/logo.svg" width="120" alt="" loading="lazy" />
         </a>
       </nav>
