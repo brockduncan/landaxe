@@ -14,8 +14,8 @@ export default function Hero(props) {
           justify-content: center;
           align-items: center;
           width: 100%;
-          min-height: 200px;
-          margin-bottom: 4rem;
+          min-height: 160px;
+          margin-bottom: 1rem;
           position: relative;
         }
         .hero:after {

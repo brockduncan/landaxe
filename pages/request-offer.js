@@ -8,12 +8,16 @@ import Hero from "../components/hero";
 export default function RequestOffer() {
   return (
     <div className="wrapper">
+      <Head>
+        <title>Landaxe | Request an Offer</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Header />
       <Hero title="Request an Offer" />
       <main>
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-md-7">
+            <div className="col-xs-12 col-md-6 pr-5">
               <h2>Land Purchase Offer</h2>
               <p>
                 Commodo deserunt occaecat adipisicing irure esse mollit ut
@@ -37,7 +41,7 @@ export default function RequestOffer() {
               </p>
             </div>
             <div className="col-xs-12 col-md-5">
-              <h2>Offer Request Form</h2>
+              {/* <h2>Offer Request Form</h2> */}
               <Formik
                 initialValues={{
                   firstName: "",

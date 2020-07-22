@@ -1,6 +1,6 @@
 import Head from "next/head";
-
 import Footer from "../components/footer";
+import McFormBuyers from "../components/mc-form-buyers";
 
 export default function Home() {
   return (
@@ -13,12 +13,17 @@ export default function Home() {
       <main>
         <section className="container hero">
           <h1 className="title logo">
-            <img src="/logo.svg" alt="Landaxe" width="260" />
+            <img src="/logo.svg" alt="Landaxe" width="240" />
           </h1>
           <div className="row">
             <div className="col-xs-12 col-md-6">
               <div className="card">
-                <h2>Do you want to sell your land?</h2>
+                <h2>I want to sell vacant land property</h2>
+                {/* <h2>Do you want to sell vacant land?</h2> */}
+                <p>
+                  Request a land purchase offer from Landaxe for your real
+                  estate property
+                </p>
                 <a href="/request-offer" className="btn btn-primary">
                   Request an Offer
                 </a>
@@ -27,9 +32,14 @@ export default function Home() {
             <div className="col-xs-12 col-md-6">
               <div className="card">
                 <h2>Are you looking to purchase land?</h2>
-                <button className="btn btn-primary" disabled>
+                <p>
+                  Join the Landaxe Buyers email list to receive select vacant
+                  land listings
+                </p>
+                <McFormBuyers />
+                {/* <button className="btn btn-primary" disabled>
                   Coming Soon
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -51,7 +61,7 @@ export default function Home() {
           text-align: center;
         }
         .logo {
-          margin: 4rem 0;
+          margin: 0 0 4rem 0;
           padding: 0.75rem;
           position: relative;
         }
@@ -79,7 +89,7 @@ export default function Home() {
         .card {
           background: rgba(255, 255, 255, 0.85);
           padding: 2.2rem;
-          max-width: 420px;
+          max-width: 400px;
         }
         .hero .card {
           margin: 1rem auto;
@@ -87,12 +97,13 @@ export default function Home() {
           align-items: center;
         }
         .hero .card h2 {
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
         }
         main {
           flex: 1;
           display: flex;
           align-items: center;
+          min-height: 100vh;
         }
       `}</style>
     </div>
