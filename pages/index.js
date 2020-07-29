@@ -53,7 +53,9 @@ export default function Home() {
           background: url("hannah-reding-RBvgyA270ic-unsplash-1920x1440.jpg")
             no-repeat center / cover;
           width: 100vw;
-          height: 100vh;
+           {
+            /* height: 100vh; */
+          }
           display: flex;
           flex-flow: column nowrap;
         }
@@ -63,6 +65,7 @@ export default function Home() {
         .logo {
           padding: 0.75rem;
           position: relative;
+          margin: 2rem 0;
         }
         @media screen and (min-width: 768px) {
           .logo {

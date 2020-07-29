@@ -33,7 +33,7 @@ export default function RequestOffer() {
       <main>
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-md-6 pr-md-5 mb-4 sm-centered">
+            <div className="col-xs-12 col-md-6 px-4 mb-4 sm-centered">
               <h3>
                 Are you looking for potential buyers and offers for your vacant
                 land real estate?
@@ -48,12 +48,14 @@ export default function RequestOffer() {
               </p>
               <p>
                 If we decide your property would be a good fit for us we'll send
-                an offer your way, otherwise we may suggest listing your
-                property on our private marketplace.
+                an offer your way or we may suggest listing your property on our
+                private marketplace.
               </p>
             </div>
-            <div className="col-xs-12 col-md-5">
-              {/* <h2>Offer Request Form</h2> */}
+            <div className="col-xs-12 col-md-5 px-4">
+              <h6 className="all-caps all-caps--sm">
+                Land Purchase Offer Request
+              </h6>
               {submitted ? (
                 <>
                   <h1>Thank you!</h1>

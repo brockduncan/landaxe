@@ -1,6 +1,7 @@
 // @import "bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+@import "util";
 
 body {
   font-family: "Lato";
@@ -15,12 +16,25 @@ h6 {
   font-weight: 600;
 }
 
+$spacer: 1.6rem;
+
 $font-size-base: 1.1rem;
 $font-family-base: "Lato";
 $btn-font-family: "Kanit";
 $line-height-base: 1.8;
+
 $headings-font-weight: 600;
-$spacer: 1.6rem;
 $headings-margin-bottom: 1.5rem;
+$headings-color: #504b43;
+
+// colors
+$primary: #70ae6e;
+$secondary: #483c46;
+// $success: $green !default;
+// $info: $cyan !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+// $light: $gray-100 !default;
+$dark: #504b43;
 
 @import "bootstrap";

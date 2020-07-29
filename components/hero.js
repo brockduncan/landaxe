@@ -34,6 +34,7 @@ export default function Hero(props) {
           z-index: 2;
           margin: 0;
           text-align: center;
+          font-style: italic;
         }
       `}</style>
     </section>

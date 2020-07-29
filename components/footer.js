@@ -6,9 +6,10 @@ export default function Footer() {
       <style jsx>{`
         footer {
           background: #fff;
-          padding: 1.6rem 4vw;
+          padding: 3rem 4vw;
           justify-self: flex-end;
           margin-top: auto;
+          text-align: center;
         }
       `}</style>
     </footer>
