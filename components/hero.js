@@ -32,6 +32,8 @@ export default function Hero(props) {
         h1 {
           position: relative;
           z-index: 2;
+          margin: 0;
+          text-align: center;
         }
       `}</style>
     </section>

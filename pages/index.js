@@ -61,9 +61,13 @@ export default function Home() {
           text-align: center;
         }
         .logo {
-          margin: 0 0 4rem 0;
           padding: 0.75rem;
           position: relative;
+        }
+        @media screen and (min-width: 768px) {
+          .logo {
+            margin: 4rem 0;
+          }
         }
         .logo:after {
           content: "";
@@ -89,7 +93,7 @@ export default function Home() {
         .card {
           background: rgba(255, 255, 255, 0.85);
           padding: 2.2rem;
-          max-width: 400px;
+          max-width: 420px;
         }
         .hero .card {
           margin: 1rem auto;

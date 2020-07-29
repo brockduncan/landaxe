@@ -7,6 +7,8 @@ export default function Footer() {
         footer {
           background: #fff;
           padding: 1.6rem 4vw;
+          justify-self: flex-end;
+          margin-top: auto;
         }
       `}</style>
     </footer>
