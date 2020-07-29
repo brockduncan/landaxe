@@ -1,167 +1,113 @@
 import Head from "next/head";
+import Footer from "../components/footer";
+import McFormBuyers from "../components/mc-form-buyers";
 
 export default function Home() {
-  const d = new Date();
   return (
-    <div className="container">
+    <div className="wrapper">
       <Head>
         <title>Landaxe</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
-        <h1 className="title">
-          <img src="/logo.svg" alt="Landaxe" width="300" />
-        </h1>
+        <section className="container hero">
+          <h1 className="title logo">
+            <img src="/logo.svg" alt="Landaxe" width="240" />
+          </h1>
+          <div className="row">
+            <div className="col-xs-12 col-md-6">
+              <div className="card">
+                <h2>I want to sell vacant land property</h2>
+                {/* <h2>Do you want to sell vacant land?</h2> */}
+                <p>
+                  Request a land purchase offer from Landaxe for your real
+                  estate property
+                </p>
+                <a href="/request-offer" className="btn btn-primary">
+                  Request an Offer
+                </a>
+              </div>
+            </div>
+            <div className="col-xs-12 col-md-6">
+              <div className="card">
+                <h2>Are you looking to purchase land?</h2>
+                <p>
+                  Join the Landaxe Buyers email list to receive select vacant
+                  land listings
+                </p>
+                <McFormBuyers />
+                {/* <button className="btn btn-primary" disabled>
+                  Coming Soon
+                </button> */}
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer>
-        <small>{`Copyright © ${d.getFullYear()}`} Landaxe, LLC</small>
-      </footer>
+      <Footer />
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
+        .wrapper {
+          background: url("hannah-reding-RBvgyA270ic-unsplash-1920x1440.jpg")
+            no-repeat center / cover;
+          width: 100vw;
+          height: 100vh;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          flex-flow: column nowrap;
         }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
+        .hero {
           text-align: center;
         }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
         .logo {
-          height: 1em;
+          padding: 0.75rem;
+          position: relative;
         }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
+        @media screen and (min-width: 768px) {
+          .logo {
+            margin: 4rem 0;
           }
         }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+        .logo:after {
+          content: "";
+          display: block;
+          width: 300px;
+          height: 100%;
+          border-radius: 25%;
+          background: radial-gradient(
+            rgba(255, 255, 255, 0.7),
+            transparent 70%
+          );
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
-
-        * {
-          box-sizing: border-box;
+        .logo img {
+          position: relative;
+          z-index: 2;
+          max-width: 100%;
+        }
+        .card {
+          background: rgba(255, 255, 255, 0.85);
+          padding: 2.2rem;
+          max-width: 420px;
+        }
+        .hero .card {
+          margin: 1rem auto;
+          display: flex;
+          align-items: center;
+        }
+        .hero .card h2 {
+          margin-bottom: 1rem;
+        }
+        main {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          min-height: 100vh;
         }
       `}</style>
     </div>
