@@ -111,6 +111,7 @@ export default function Home() {
           display: flex;
           align-items: center;
           min-height: 100vh;
+          padding-bottom: 4rem;
         }
       `}</style>
     </div>
