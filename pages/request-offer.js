@@ -121,7 +121,7 @@ export default function RequestOffer() {
                           Phone Number
                         </label>
                         <Field
-                          type="phone"
+                          type="tel"
                           id="phone"
                           name="phone"
                           placeholder="123-456-7890"
@@ -246,7 +246,7 @@ export default function RequestOffer() {
                               Property Zip Code
                             </label>
                             <Field
-                              type="text"
+                              type="number"
                               id="propertyZipCode"
                               name="propertyZipCode"
                               placeholder="Zip Code"
