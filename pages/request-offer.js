@@ -39,17 +39,17 @@ export default function RequestOffer() {
                 land real estate?
               </h3>
               <p>
-                We are striving to maintain a strong catalog of premium vacant
+                We strive to maintain a strong catalog of premium vacant
                 residential land and vacant commercial properties.
               </p>
               <p>
-                Fill out the short form and provide just a few details for our
-                team to assess your property as thoroughly as possible.
+                Fill out the short request form and provide just a few details
+                for our team to assess your property as thoroughly as possible.
               </p>
               <p>
-                If we decide your property would be a good fit for us we'll send
-                an offer your way or we may suggest listing your property on our
-                private marketplace.
+                If we determine your property to be a good fit for us we'll
+                respond with an offer or we may suggest listing your property on
+                our private marketplace.
               </p>
             </div>
             <div className="col-xs-12 col-md-5 px-4 pr-sm-1">

@@ -8,19 +8,22 @@ export default function Hero(props) {
 
       <style jsx>{`
         .hero {
-          background: url("/hannah-reding-RBvgyA270ic-unsplash-1920x1440.jpg")
-            no-repeat center / cover;
+           {
+            /* background: url("/hannah-reding-RBvgyA270ic-unsplash-1920x1440.jpg")
+            no-repeat center / cover; */
+          }
+          background: #483c46;
           display: flex;
           justify-content: center;
           align-items: center;
           width: 100%;
           min-height: 160px;
-          margin-bottom: 1rem;
+          margin-bottom: 4rem;
           position: relative;
         }
         .hero:after {
           content: "";
-          display: block;
+          display: none;
           width: 100%;
           height: 120px;
           background: linear-gradient(transparent, #fff);
@@ -34,7 +37,7 @@ export default function Hero(props) {
           z-index: 2;
           margin: 0;
           text-align: center;
-          font-style: italic;
+          color: #fff;
         }
       `}</style>
     </section>
