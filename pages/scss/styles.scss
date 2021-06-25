@@ -1,40 +1,49 @@
-// @import "bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
-@import "util";
+// // @import "bootstrap";
+// @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+// @import "util";
 
-body {
-  font-family: "Lato";
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Kanit";
-  font-weight: 600;
-}
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 
-$spacer: 1.6rem;
+// // buttons
+// .btn {
+//   @apply p-3 rounded-md background;
+// }
 
-$font-size-base: 1rem;
-$font-family-base: "Lato";
-$btn-font-family: "Kanit";
-$line-height-base: 1.8;
+// // body {
+// //   font-family: "Lato";
+// // }
+// // h1,
+// // h2,
+// // h3,
+// // h4,
+// // h5,
+// // h6 {
+// //   font-family: "Kanit";
+// //   font-weight: 600;
+// // }
 
-$headings-font-weight: 600;
-$headings-margin-bottom: 1.5rem;
-$headings-color: #504b43;
+// // $spacer: 1.6rem;
 
-// colors
-$primary: #70ae6e;
-$secondary: #483c46;
-// $success: $green !default;
-// $info: $cyan !default;
-// $warning: $yellow !default;
-// $danger: $red !default;
-// $light: $gray-100 !default;
-$dark: #504b43;
+// // $font-size-base: 1rem;
+// // $font-family-base: "Lato";
+// // $btn-font-family: "Kanit";
+// // $line-height-base: 1.8;
 
-@import "bootstrap";
+// // $headings-font-weight: 600;
+// // $headings-margin-bottom: 1.5rem;
+// // $headings-color: #504b43;
+
+// // // colors
+// // $primary: #70ae6e;
+// // $secondary: #483c46;
+// // // $success: $green !default;
+// // // $info: $cyan !default;
+// // // $warning: $yellow !default;
+// // // $danger: $red !default;
+// // // $light: $gray-100 !default;
+// // $dark: #504b43;
+
+// // @import "bootstrap"; */

@@ -18,7 +18,7 @@ export default function McFormBuyers() {
           }
         >
           <Form>
-            <div className="input-group">
+            <div className="input-group flex">
               <Field
                 type="email"
                 name="EMAIL"

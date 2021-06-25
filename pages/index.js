@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Footer from "../components/footer";
-import McFormBuyers from "../components/mc-form-buyers";
+import Footer from "../components/Footer";
+import McFormBuyers from "../components/MailChimpFormBuyers";
 
 export default function Home() {
   return (
@@ -11,36 +11,29 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className="container hero">
+        <section className="hero container mx-auto">
           <h1 className="title logo">
-            <img src="/logo.svg" alt="Landaxe" width="240" />
+            <img src="/logo.svg" alt="Landaxe" width="240" className="mx-auto" />
           </h1>
-          <div className="row">
-            <div className="col-xs-12 col-md-6">
-              <div className="card">
-                <h2>I want to sell vacant land property</h2>
-                {/* <h2>Do you want to sell vacant land?</h2> */}
-                <p>
-                  Request a land purchase offer from Landaxe for your real
-                  estate property
-                </p>
-                <a href="/request-offer" className="btn btn-primary">
-                  Request an Offer
-                </a>
-              </div>
+          <div className="flex flex-col lg:flex-row items-center lg:justify-around lg:items-stretch">
+            <div className="m-8 w-full lg:w-1/2 bg-white bg-opacity-74 px-16 py-8 max-w-md flex flex-col items-center rounded shadow-lg">
+              <h2 className="mb-4 text-secondary text-3xl font-display font-bold">I want to sell vacant land property</h2>
+              {/* <h2>Do you want to sell vacant land?</h2> */}
+              <p className="mb-8 text-lg">
+                Request a land purchase offer from Landaxe for your real
+                estate property
+              </p>
+              <a href="/request-offer" className="btn btn-primary">
+                Request an Offer
+              </a>
             </div>
-            <div className="col-xs-12 col-md-6">
-              <div className="card">
-                <h2>Are you looking to purchase land?</h2>
-                <p>
-                  Join the Landaxe Buyers email list to receive select vacant
-                  land listings
-                </p>
-                <McFormBuyers />
-                {/* <button className="btn btn-primary" disabled>
-                  Coming Soon
-                </button> */}
-              </div>
+            <div className="m-8 w-full lg:w-1/2 bg-white bg-opacity-74 px-16 py-8 max-w-md flex flex-col items-center rounded shadow-lg">
+              <h2 className="mb-4 text-secondary text-3xl font-display font-bold">Are you looking to purchase land?</h2>
+              <p className="mb-8 flex-grow text-lg"> 
+                Join the Landaxe Buyers email list to receive select vacant
+                land listings
+              </p>
+              <McFormBuyers />
             </div>
           </div>
         </section>
@@ -94,9 +87,7 @@ export default function Home() {
           max-width: 100%;
         }
         .card {
-          background: rgba(255, 255, 255, 0.85);
-          padding: 2.2rem;
-          max-width: 420px;
+
         }
         .hero .card {
           margin: 1rem auto;

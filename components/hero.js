@@ -2,16 +2,12 @@ import { Children } from "react";
 
 export default function Hero(props) {
   return (
-    <section className="hero">
-      <h1>{props.title}</h1>
+    <section className="hero bg-secondary">
+      <h1 className="text-4xl font-display font-bold">{props.title}</h1>
       <p>{props.children}</p>
 
       <style jsx>{`
         .hero {
-           {
-            /* background: url("/hannah-reding-RBvgyA270ic-unsplash-1920x1440.jpg")
-            no-repeat center / cover; */
-          }
           background: #483c46;
           display: flex;
           justify-content: center;

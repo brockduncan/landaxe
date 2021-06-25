@@ -1,28 +1,26 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Header() {
   const [toggleNav, setToggleNav] = useState(false);
   return (
-    <header>
-      <nav className="navbar navbar-light bg-light navbar-expand-md">
-        <a className="navbar-brand" href="/">
+    <header className="bg-white p-4 absolute top-0 left-0 z-30 w-full">
+      <div className="2xl:container mx-auto flex flex-wrap justify-between items-center">
+        <a href="/">
           <img src="/logo.svg" width="90" alt="Landaxe" loading="lazy" />
         </a>
         <button
-          className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
           aria-label="Toggle navigation"
           onClick={() => setToggleNav(!toggleNav)}
+          className="w-5 xl:hidden"
         >
-          <span className="navbar-toggler-icon"></span>
+          <FontAwesomeIcon icon="bars" size="xs" />
         </button>
-        <div
-          className={toggleNav ? "show collapse navbar-collapse" : "hide"}
+        </div>
+        <nav
+          className={(toggleNav ? "flex collapse navbar-collapse" : "hidden")}
           id="navbarNav"
         >
           <ul className="navbar-nav navbar-nav--right">
@@ -42,28 +40,7 @@ export default function Header() {
               </a>
             </li> */}
           </ul>
-        </div>
-      </nav>
-      <style jsx>{`
-        header {
-          position: absolute;
-          width: 100%;
-          height: 48px;
-          top: 0;
-          left: 0;
-          z-index: 10;
-          box-shadow: rgba(0, 0, 0, 0.15) 0 2px 14px 0;
-        }
-        .navbar-brand {
-          line-height: 1;
-        }
-        .show {
-          display: block;
-        }
-        .hide {
-          display: none;
-        }
-      `}</style>
+        </nav>
     </header>
   );
 }

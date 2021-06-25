@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* buttons */
+.btn {
+  @apply p-3 rounded-md bg-primary text-white font-bold font-display text-lg;
+}
+
+/* inputs */
+.form-control {
+  @apply p-3 rounded bg-white border border-gray-100 shadow-sm font-bold;
+}
